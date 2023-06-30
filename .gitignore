@@ -1,3 +1,4 @@
 model/dataset
-model/model.h5
-model/model.json
+model/modelWeight.h5
+model/trainedModel.json
+server/image.png
