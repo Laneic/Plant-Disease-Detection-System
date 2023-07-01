@@ -1,3 +1,6 @@
+ html{
+   scroll-behavior: smooth;
+ }
  *{
     margin: 0;
     padding: 0;
@@ -22,6 +25,7 @@
     top: 0;
     left: 0;
     padding: 20px 8%;
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,16 +39,36 @@
  nav ul li{
     list-style: none;
     display: inline-block;
+    margin: 4px 23px;
     margin-left: 40PX;
  }
 
  nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 17px;
+    font-size: 1.5rem;
+    padding: 5px;
+ }
+ nav ul li a:hover {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #fff;
+    border-radius: 11px;
+    color: grey;
  }
 
+.glass{
+   align-items: center;
+   width: 56%;
+   height: 54%;
+   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+   border-radius: 20px;
+   border:1px solid rgba(255, 255, 255, 0.18);
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
  .content{
+   padding-top: 142px;
     text-align: center;
  }
 
@@ -77,6 +101,17 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+   }
+   .getstar:hover{
+   backdrop-filter: blur(25px);
+   -webkit-backdrop-filter: blur(25px);
+   opacity: 0.7;
+   }
+
+ /* services section */
+ .service{
+   width: 100%;
+   height: 100vh;
  }
 
  @media (max-aspect-ratio: 16/9){
