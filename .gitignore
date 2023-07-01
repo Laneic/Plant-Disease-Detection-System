@@ -2,5 +2,3 @@ model/dataset
 model/modelWeight.h5
 model/trainedModel.json
 server/image.png
-logo.png
-plants.mp4
