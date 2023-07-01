@@ -1,7 +1,7 @@
 from flask import Flask
 import numpy as np
 from  tensorflow import keras
-from tensorflow.keras.models import model_from_json,
+from tensorflow.keras.models import model_from_json
 from plantDisease import plantDiseaseClasses
 
 app = Flask(__name__)
@@ -33,7 +33,7 @@ def predict():
     diseaseName=predictDisease()
     return diseaseName
 
-if __name__ == '__main__': #Server run
+if __name__ == '__main__': #Server running
     app.run()
 
 
