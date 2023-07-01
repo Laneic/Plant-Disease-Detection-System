@@ -13,7 +13,6 @@ jsonFile.close()
 
 def predictDisease():
 
-    
     imagePath="E:/Plant-Disease-Detection-System/server/image.png"
     newImg =keras.utils.load_img(imagePath, target_size=(256, 256))
     testImage = keras.utils.img_to_array(newImg)
@@ -22,17 +21,19 @@ def predictDisease():
     prediction = plantModel.predict(testImage)
     index=prediction.argmax(axis=-1)[0]
     className = plantDiseaseClasses[index] 
-
     return className
+
 @app.route('/')
 def index():
+
     return
+
 @app.route('/predict')
 def predict():
     diseaseName=predictDisease()
     return diseaseName
 
-if __name__ == '__main__':
+if __name__ == '__main__': #Server run
     app.run()
 
 
