@@ -117,6 +117,6 @@
  @media (max-aspect-ratio: 16/9){
     .back-video{
         width: auto;
-        height: 100px;
+        height: 100%;
     }
  }
