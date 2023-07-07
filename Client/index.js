@@ -1,28 +1,25 @@
 window.addEventListener("DOMContentLoaded", (event) => {
     const el = document.getElementById('testing');
-    console.log(el)
     if (el) {
       el.addEventListener('click',postImg);
-}
+    }
 })
 async function postImg(){
-    const image2 =document.getElementById('image').files[0]
-    if (image2){ 
-    const response =fetch("http://127.0.0.1:5000/predict", {     
-        method: "POST",
-        headers: {
-        "Content-Type": "application/json",
-        },
-        body: image2,
-    });
+    const uploadedImage =document.getElementById('leafImage').files[0]
+    const formData = new FormData();
+    formData.append('formIMAGE', uploadedImage);
+    
+    if (uploadedImage){  
+        const response = await fetch("http://127.0.0.1:5000/predict", {     
+            method: "POST",
+            body: formData
+        });
+        const result = await response.text();
+        console.log(result)
     }
-    if(!image2){
+    else{
         console.log("Image not uploaded")
         return
     }
-
-    const result = await response.json();
-    console.log("Success:", result);
-
 }
   
