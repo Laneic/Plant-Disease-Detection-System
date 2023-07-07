@@ -1,3 +1,20 @@
+window.addEventListener('DOMContentLoaded', function() {
+    const imageUpload = document.getElementById('imageUpload');
+    const previewImage = document.getElementById('preview');
+
+    imageUpload.addEventListener('change', function() {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+
+        reader.addEventListener('load', function() {
+          previewImage.src = reader.result;
+        });
+
+        reader.readAsDataURL(file);
+      }
+    });
+  });
 window.addEventListener("DOMContentLoaded", (event) => {
     const el = document.getElementById('testing');
     if (el) {
