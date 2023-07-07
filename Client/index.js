@@ -1,19 +1,22 @@
 window.addEventListener('DOMContentLoaded', function() {
     const previewImage = document.getElementById('preview');
     imageUpload.addEventListener('change', function() {
-    const file = this.files[0];
-      if (file) {
+          const file = this.files[0];
+          if (file) {
           const reader = new FileReader();
           reader.addEventListener('load', function() {
             previewImage.src = reader.result;
           });
           reader.readAsDataURL(file);
-      }
+        }
+        document.getElementById('plantName').innerText=result=''
+        document.getElementById('diseaseName').innerText=''
+        document.getElementById('desc').innerText=''
     });
     const el = document.getElementById('submit');
     if (el) {
       el.addEventListener('click',postImg);
-    }
+    }  
 });
 
 async function postImg(){
@@ -27,7 +30,9 @@ async function postImg(){
             body: formData
         });
         const result = await response.json();
-        console.log(result)
+        document.getElementById('plantName').innerText=`Plant Name: ${result.plantName}`
+        document.getElementById('diseaseName').innerText=`Disease Name: ${result.disease}`
+        document.getElementById('desc').innerText=`Information :${result.diseaseDesc}`
     }
     else{
         console.log("Image not uploaded")
