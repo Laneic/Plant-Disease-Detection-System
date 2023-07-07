@@ -6,7 +6,7 @@ from plantDisease import plantDiseaseClasses
 from flask_cors import CORS, cross_origin
 import os
 import requests
-import json
+from dotenv.main import load_dotenv
 
 app = Flask(__name__)
 CORS(app)
@@ -39,7 +39,8 @@ def predictDisease(postImage):
     return output
 
 def openAIAPI(diseaseName):
-    apiKey = ('Your API Key')
+    load_dotenv()
+    apiKey = os.environ['API_KEY']
     url = 'https://api.openai.com/v1/chat/completions'
     headers = {
         'Authorization': f'Bearer {apiKey}',
