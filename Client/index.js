@@ -14,7 +14,7 @@ async function postImg(){
             method: "POST",
             body: formData
         });
-        const result = await response.text();
+        const result = await response.json();
         console.log(result)
     }
     else{
