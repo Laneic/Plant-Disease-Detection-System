@@ -31,9 +31,8 @@
 .label {
   opacity: 1;
   color: #fff;
-  background-color: #477139;
-  background-image: radial-gradient(circle, #2f6220 9%, #fff);
-  border: 1px solid #587c4e;
+  border: 1px solid #fcfcfb;
+  background-color: #88cb73;
   border-radius: 20px;
   flex-direction: column;
   justify-content: flex-start;
@@ -45,17 +44,12 @@
   font-size: 18px;
   transition: opacity .2s;
   display: inline-block;
-}
-
-.label:hover {
-  background-image: radial-gradient(circle, #2f6220 34%, #fff);
 }
 #submit {
   opacity: 1;
-  color: #fff;
-  background-color: #477139;
-  background-image: radial-gradient(circle, #2f6220 9%, #fff);
-  border: 1px solid #587c4e;
+  color: #ffffff;
+  background-color: #88cb73;
+  border: 1px solid #f6f6f6;
   border-radius: 20px;
   flex-direction: column;
   justify-content: flex-start;
@@ -68,7 +62,9 @@
   transition: opacity .2s;
   display: inline-block;
 }
-
-#submit:hover {
-  background-image: radial-gradient(circle, #2f6220 34%, #fff);
+.servicediv::before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url('wp4021696.jpg');
 }

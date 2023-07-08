@@ -2,6 +2,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     font-family: sans-serif;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -2369,3 +2370,4 @@ html {
   .background-video {
     overflow: hidden;
   }
+  
