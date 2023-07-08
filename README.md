@@ -52,7 +52,7 @@ It's important to note that the specific impact of a plant disease detection sys
 •tensorflow@2.12.0
 
 **Installations:**\
-•Downloaded the  Image Dataset from https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset 
+•Downloaded the Image Dataset from https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset 
 
 **Modifications:**\
 •Train the **C**onvulational **N**eural **N**etwork on the  previously installed Dataset.
@@ -65,20 +65,13 @@ It's important to note that the specific impact of a plant disease detection sys
 •Python
 
 **How To Execute Project**
-•Start the developement server using python flask framework.
-•Launch the website on your desktop browser (preffered google chrome).\
-•Upload the image.\
-•Javascript sends a post request to the server.\
-•Image is received using the route in python flask.\
-•Server sends the image to CNN model for comparison and prediction of the disease.\
-•CNN model returns the Plant and disease name.\
-•An API request is made to a OpenAi model to provide solutions and information about the predicted disease.\
-•The information returned by the OpenAi model is displayed on the Website.  
-
-
-
-
-
+•pip install -r requirements
+•Setup Environment Variable API_KEY with your openAI API Key
+•Run the Backend Server using command python App.py
+•Launch the index.html on your desktop browser (preffered google chrome).\
+•Choose the Image\
+•click the predict button
+• wait for the plant name, disease name and diseases information output
 
 
 
