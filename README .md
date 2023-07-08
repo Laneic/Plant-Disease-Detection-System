@@ -63,7 +63,8 @@ It's important to note that the specific impact of a plant disease detection sys
 •CSS 3
 •HTML 5
 •Python
-## How To Execute Project
+
+**How To Execute Project**
 •Start the developement server using python flask framework.
 •Launch the website on your desktop browser (preffered google chrome).\
 •Upload the image.\
