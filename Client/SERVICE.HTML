@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section id="servicesection" class="service">
+        
+        <div class="servicediv">
+            
+            <h1 class="serviceheading">
+                Plant Disease Prediction
+            </h1>
+            <img src="empty-image.png" style="width: 150px;" id="preview" alt="">
+            <label for="imageUpload" class="label">UPLOAD IMAGE</label>
+            <input type="file" accept="image/*" class="inputing" id="imageUpload" name="imageUpload">
+            <button id="submit">PREDICT!</button>
+        </div>
+    
+    </section>
+    <div id="output">
+        <P id="plantName"></P>
+        <P id="diseaseName"></P>
+        <P id="desc"></P>
+    </div> 
+</body>
+</html>
