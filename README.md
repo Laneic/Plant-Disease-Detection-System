@@ -65,13 +65,13 @@ It's important to note that the specific impact of a plant disease detection sys
 •Python
 
 **How To Execute Project**
-•pip install -r requirements
-•Setup Environment Variable API_KEY with your openAI API Key
-•Run the Backend Server using command python App.py
-•Launch the index.html on your desktop browser (preffered google chrome).\
-•Choose the Image\
-•click the predict button
-• wait for the plant name, disease name and diseases information output
+•pip install -r requirements. \
+•Setup Environment Variable API_KEY with your openAI API Key. \
+•Run the Backend Server using command python App.py. \
+•Launch the index.html on your desktop browser (preffered google chrome). \
+•Choose the Image. \
+•click the predict button. \
+• wait for the plant name, disease name and diseases information output. \
 
 
 
